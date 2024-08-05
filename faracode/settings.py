@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'projects_app.apps.ProjectsAppConfig'
+    'projects_app',
+    'form_app'
 ]
 
 MIDDLEWARE = [
@@ -124,3 +125,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR , 'assets')]
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+def MDIA_URL(request):
+    return None
